@@ -1,0 +1,8 @@
+@use "colores";
+h1 {
+    font-size: 2rem;
+    color: red;
+}
+body {
+    background-color: colores.$colorNegro;
+}
