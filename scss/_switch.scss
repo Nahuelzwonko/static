@@ -2,8 +2,8 @@
 @use 'colores';
 @media (prefers-color-scheme: dark) {
     :root:not(.is-light) {
-      --font-color: #000000;
-      --negro: #0a0a0acd;
+      --font-color: #f4eaf0ff;
+      --negro: #f4eaf0ff;
     }
   
     html:not(.is-light) body {
