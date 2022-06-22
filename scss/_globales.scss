@@ -100,3 +100,64 @@ a{
 .my-float{
 	margin-top:16px;
 }
+//prueba
+/*! CSS Used from: https://demo.ninjateam.org/whatsapp-chat-wordpress/wp-content/plugins/whatsapp-chat-ninjateam/assets/css/style.css?ver=4.9.8 ; media=all */
+@media all{
+  .wa__button{border-bottom:none!important;}
+  .wa__btn_w_img:hover{text-decoration:none;}
+  .wa__button,.wa__button *,.wa__button :before,.wa__button :after{box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
+  .wa__button{position:relative;width:300px;min-height:64px;display:block;font-family:Arial,Helvetica,sans-serif;text-decoration:none;color:#fff;box-shadow:0 4px 8px 1px rgba(32,32,37,.09);-webkit-box-shadow:0 4px 8px 1px rgba(32,32,37,.09);-moz-box-shadow:0 4px 8px 1px rgba(32,32,37,.09);}
+  .wa__btn_txt{display:inline-block;font-size:12px;line-height:1.33em;}
+  .wa__cs_info{margin-bottom:2px;}
+  .wa__cs_info .wa__cs_name,.wa__cs_info .wa__cs_status{display:inline-block;}
+  .wa__cs_info .wa__cs_name{font-weight:400;font-size:12px;line-height:1.36em;}
+  .wa__stt_online .wa__cs_info .wa__cs_name{color:#d5f0d9;}
+  .wa__cs_info .wa__cs_status{width:36px;height:14px;margin-left:3px;padding:1px;font-size:9px;line-height:1.34em;border-radius:5px;color:rgba(255,255,255,.98);position:relative;top:-1px;left:0;text-align:center;}
+  .wa__stt_online .wa__cs_info .wa__cs_status{background:#62c971;}
+  .wa__stt_online{background:#2db742;cursor:pointer;transition:.4s ease all;-webkit-transition:.4s ease all;-moz-transition:.4s ease all;backface-visibility:hidden;will-change:transform;}
+  .wa__stt_online .wa__btn_txt{position:relative;z-index:4;}
+  .wa__r_button.wa__stt_online:before{border-radius:50vh;}
+  .wa__stt_online:before{content:'';transition:.4s ease all;-webkit-transition:.4s ease all;-moz-transition:.4s ease all;background:rgba(0,0,0,.2);position:absolute;left:0;top:0;z-index:-1;width:100%;height:100%;opacity:0;will-change:opacity;}
+  .wa__button.wa__stt_online:focus,.wa__button.wa__stt_online:active,.wa__button.wa__stt_online:hover{box-shadow:0 4px 8px 1px rgba(32,32,37,.19);transform:translate(0,-3px);-webkit-transform:translate(0,-3px);-moz-transform:translate(0,-3px);-ms-transform:translate(0,-3px);}
+  .wa__button.wa__stt_online:focus:before,.wa__button.wa__stt_online:active:before,.wa__button.wa__stt_online:hover:before{opacity:1;}
+  .wa__btn_w_img{position:relative;width:300px;margin:20px 0;}
+  .wa__btn_w_img .wa__cs_img{position:absolute;top:50%;left:0;text-align:center;transform:translate(0,-50%);-webkit-transform:translate(0,-50%);-moz-transform:translate(0,-50%);}
+  .wa__btn_w_img .wa__cs_img_wrap{width:79px;height:79px;border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%;border:3px solid #fff;position:relative;overflow:hidden;}
+  .wa__btn_w_img .wa__cs_img:after{content:'';background:#fff url(https://demo.ninjateam.org/whatsapp-chat-wordpress/wp-content/plugins/whatsapp-chat-ninjateam/assets/img/whatsapp_logo_green.svg) center center no-repeat;background-size:21px;display:block;width:27px;height:27px;position:absolute;top:20px;right:-14px;border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%;box-shadow:0 4px 6px 0 rgba(39,38,38,.3);-webkit-box-shadow:0 4px 6px 0 rgba(39,38,38,.3);-moz-box-shadow:0 4px 6px 0 rgba(39,38,38,.3);}
+  .wa__btn_w_img .wa__btn_txt{padding:14px 20px 12px 103px;}
+  .wa__r_button{border-radius:50vh;}
+  .wa__r_button.wa__btn_w_img .wa__cs_img{left:-5px;}
+  .wa__btn_txt .wa__btn_title{font-weight:600;}
+  .wa__r_button.wa__btn_w_img .wa__btn_txt{padding:8px 20px 8px 100px;display:table-cell;vertical-align:middle;height:66px;}
+  .wa__r_button.wa__btn_w_img .wa__cs_info .wa__cs_status{margin-left:3px;}
+  }
+  /*! CSS Used from: https://demo.ninjateam.org/whatsapp-chat-wordpress/wp-content/themes/enfold/css/base.css?ver=2 ; media=all */
+  @media all{
+  div,a{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+  *{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+  a{text-decoration:none;outline:0;max-width:100%;max-width:none\9;}
+  a:hover,a:focus,a:visited{outline:0;text-decoration:underline;}
+  }
+  /*! CSS Used from: https://demo.ninjateam.org/whatsapp-chat-wordpress/wp-content/themes/enfold/css/print.css?ver=1 ; media=print */
+  @media print{
+  a{color:#000!important;}
+  a{text-decoration:underline;}
+  }
+  /*! CSS Used from: https://demo.ninjateam.org/whatsapp-chat-wordpress/wp-content/uploads/sites/47/dynamic_avia/enfold.css?ver=5c5781516ef30 ; media=all */
+  @media all{
+  ::-moz-selection{background-color:#6786a1;color:#f8f8f8;}
+  ::selection{background-color:#6786a1;color:#f8f8f8;}
+  .main_color div,.main_color a{border-color:#e1e1e1;}
+  .main_color .sidebar a{color:#8d8d8d;}
+  .main_color a{color:#6786a1;}
+  .main_color a:hover{color:#8ca7be;}
+  .main_color ::-webkit-input-placeholder{color:#8d8d8d;}
+  .main_color ::-moz-placeholder{color:#8d8d8d;opacity:1;}
+  .main_color :-ms-input-placeholder{color:#8d8d8d;}
+  .wa__stt_online .wa__btn_title{color:#fff;}
+  .wa__btn_w_img:hover{text-decoration:none;}
+  }
+  /*! CSS Used from: Embedded */
+  #nta-wabutton-9634 .wa__stt_online{background:#2db742;}
+  #nta-wabutton-9634 .wa__stt_online{color:#fff;}
+  #nta-wabutton-9634 .wa__stt_online .wa__cs_name{color:#fff;opacity:0.8;}
