@@ -3,12 +3,12 @@
 @media (prefers-color-scheme: dark) {
     :root:not(.is-light) {
       --font-color: #f4eaf0ff;
-      --negro: #f4eaf0ff;
+      --negro: rgb(140, 30, 96);
     }
   
     html:not(.is-light) body {
       background: rgb(0, 0, 0);
-      color: rgb(197, 0, 0);
+      color: rgb(0, 0, 0);
     }
   }
   :root.is-dark {

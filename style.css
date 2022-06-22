@@ -12,6 +12,16 @@ h1 {
   font-family: "Farsan", cursive;
 }
 
+h2 {
+  padding: 2%;
+  font-size: 4rem;
+}
+
+h3 {
+  padding: 2%;
+  font-size: 3rem;
+}
+
 p {
   text-align: center;
   font-size: 2rem;
@@ -25,7 +35,7 @@ html {
   height: 100%;
 }
 
-.img {
+img {
   width: 800px;
   height: auto;
 }
@@ -34,11 +44,11 @@ html {
 @media (prefers-color-scheme: dark) {
   :root:not(.is-light) {
     --font-color: #f4eaf0ff;
-    --negro: #f4eaf0ff;
+    --negro: rgb(140, 30, 96);
   }
   html:not(.is-light) body {
     background: rgb(0, 0, 0);
-    color: rgb(197, 0, 0);
+    color: rgb(0, 0, 0);
   }
 }
 :root.is-dark {
