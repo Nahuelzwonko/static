@@ -107,6 +107,29 @@ a {
   align-items: center;
 }
 
+.botones {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 29%;
+  top: 55%;
+  padding: 7rem;
+  margin-right: 10px;
+}
+.botones .btn {
+  background-color: #f5e1ce;
+  opacity: 1;
+  font-weight: 700;
+  border-radius: 15px 15px 20px;
+  border: 1px solid #f4eaf0;
+  font-family: "Cookie", cursive;
+}
+.botones .btn .button-1 {
+  background-color: transparent;
+  border: none;
+  color: rgba(37, 37, 37, 0.9058823529);
+}
+
 #whats-chat {
   position: fixed;
   right: 3%;
@@ -355,7 +378,7 @@ ul li a:hover:nth-child(4) {
   left: 7.5%;
 }
 .container h1 {
-  font-size: 9rem;
+  font-size: 10rem;
 }
 
 @media (max-width: 768px) {
@@ -413,6 +436,11 @@ ul li a:hover:nth-child(4) {
     background-size: 50%;
     background-position: 0 0;
   }
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */

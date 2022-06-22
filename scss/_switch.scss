@@ -1,0 +1,27 @@
+@use "globales";
+@use "colores";
+@use "font";
+
+.botones {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 29%;
+    top: 55%;
+    padding: 7rem;
+    margin-right: 10px;
+    .btn {
+        background-color: colores.$almond;
+        opacity: 1;
+        font-weight: 700;
+        border-radius: 15px 15px 20px;
+        border: 1px solid colores.$lavender-blush;
+        font-family: font.$fuentePrincipal;
+        .button-1 {
+            background-color: transparent;
+            border: none;
+            color: colores.$grey;
+        }    
+    }
+}
+
