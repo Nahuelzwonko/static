@@ -1,32 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+.fondo{
+  position: absolute;
+  left: 23%;
+  top: 50%;
+  padding: 2%;
+}
 
-.container {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 35%;
-    left: 7.5%;
-    h1 {
-        font-size: 10rem;
-    }
-}
-@media (max-width: 768px) {
-    .container {
-        display: flex;
-        justify-content: center;
-        right: 1%;
-        left: 0.5%;
-        top: 16%;
-    }
-}
-@media (max-width: 768) {
-    h1 {
-        font-size: 1rem;
-    }
-}
 .gradient-text {
-  color: transparent;
+  font-size: 9rem;
+
+  color:transparent;
   background: conic-gradient(
     #D9D7F1 12%, 
     #BAABDA 12%, #BAABDA 33%, 
@@ -37,10 +21,7 @@
   background-size: 50%;
   background-clip: text;  
   -webkit-background-clip: text;
-
   animation: expand-rev 0.5s ease forwards;
-
-  cursor: pointer;
 }
 
 .gradient-text:hover {
