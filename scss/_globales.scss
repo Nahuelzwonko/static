@@ -33,6 +33,42 @@ html {
 }
 
 img {
-  width: 800px;
+  width: 500px;
   height: auto;
+  
+  border:0;
+}
+.btn {
+  display: flex;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 2.5rem;
+  border-radius: 50px;
+  
+}
+.btn::after{
+  content: "";
+
+  display: block;
+  width: 9px;
+  height: 24px;
+  overflow: hidden;
+  background-image: url(#);
+  transition: witch 200ms, margin-left 200ms;
+
+}
+
+.btn:is(:hover, :focus)::after{
+  width: 24px;
+  margin: left 8px; 
+}
+.botones{
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+}
+ .fotter{
+  font-size: 13px;
 }
