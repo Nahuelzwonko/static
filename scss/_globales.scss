@@ -26,12 +26,7 @@ h3 {
   padding: 2%;
   font-size: 3rem;
 }
-p {
-  text-align: center;
-  font-size: 2rem;
-  font-family: font.$funteParrafos;
-  padding: 2%;
-}
+
 html {
   box-sizing: border-box;
   font-size: 62.5%; /*1 rem 10px*/
@@ -47,24 +42,6 @@ img {
 a{
   text-decoration: none;
   color: black;
-}
-
- .fotter{
-  font-size: 13px;
-}
-
-.glass {
-  height: 100%;
-  width: 100%;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1376484/jess-harding-lqT6NAmTaiY-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
-  -webkit-clip-path: inset(10em);
-          clip-path: inset(10em);
-  filter: blur(20px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .imagen{
   display: flex;

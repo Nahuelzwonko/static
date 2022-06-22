@@ -1,8 +1,11 @@
 @use "globales";
+@use "colores";
 
-.footer {
+
+.footer{
     display: flex;
     justify-content: center;
-    position: relative;
-    
+    padding: 1%;
+    font-size:1.5rem;
+    color: colores.$grey;
 }
