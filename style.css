@@ -1,31 +1,48 @@
 /* SCSS HEX */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
 h1 {
-  font-size: 2rem;
-  color: red;
+  padding: 2%;
+  font-size: 6rem;
   text-align: center;
+  font-family: "Farsan", cursive;
 }
 
-body {
-  background-color: black;
+p {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Courier Prime", monospace;
+  padding: 2%;
 }
 
-.cursor {
-  cursor: url("https://img.icons8.com/nolan/32/hand-cursor.png"), auto;
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /*1 rem 10px*/
+  height: 100%;
+}
+
+.img {
+  width: 800px;
+  height: auto;
 }
 
 /*Fondo cambio color*/
 @media (prefers-color-scheme: dark) {
   :root:not(.is-light) {
-    --font-color: #000000;
-    --negro: #0a0a0acd;
+    --font-color: #f4eaf0ff;
+    --negro: #f4eaf0ff;
   }
   html:not(.is-light) body {
-    background: rgb(255, 255, 255);
-    color: rgb(255, 250, 250);
+    background: rgb(0, 0, 0);
+    color: rgb(197, 0, 0);
   }
 }
 :root.is-dark {
-  --font-color: #ffffffec;
+  --font-color: rgb(0, 0, 0);
 }
 
 html.is-dark body {
@@ -42,7 +59,7 @@ button {
   background: var(--trasparente);
   border-radius: 30px;
   position: absolute;
-  border: 1px solid rgb(68, 68, 68);
+  border: none;
 }
 
 .hola {

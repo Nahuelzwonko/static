@@ -1,5 +1,34 @@
 @use "colores";
+@use "font";
 
-h1{
-    color: white;
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+h1 {
+    padding: 2%;
+    font-size: 6rem;
+  text-align: center;
+  font-family: font.$fuentePrincipal;
+}
+h2 {
+}
+h3 {
+}
+p {
+  text-align: center;
+  font-size: 2rem;
+  font-family: font.$funteParrafos;
+  padding: 2%;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /*1 rem 10px*/
+  height: 100%;
+}
+
+.img {
+  width: 800px;
+  height: auto;
 }
