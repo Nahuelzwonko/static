@@ -273,7 +273,7 @@ a {
 .icon-button {
   display: inline-flex;
   flex-direction: column-reverse;
-  margin: 0 0 0 12px;
+  margin: 0 0 5px 4px;
   position: relative;
   width: 3.6rem;
   left: 41%;
@@ -283,7 +283,7 @@ a {
 @media (max-width: 768px) {
   .icon-button {
     display: inline-block;
-    margin: 2px 1px 3px 9px;
+    margin: 13px 1px 23px -5px;
     position: static;
     width: 3rem;
     padding-left: 15%;
@@ -335,6 +335,12 @@ a {
 
 .icon-button .icon-instagram-plus {
   background-image: url(../img/iconos/icoonosRedes/instagram.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-button .icon-maps {
+  background-image: url(../img/iconos/icoonosRedes/icons8-google-maps-48.png);
   background-position: center;
   background-repeat: no-repeat;
 }
