@@ -1,55 +1,55 @@
+@use "colores";
 #whats-chat {
   position: fixed;
-  right: 3%;
-  bottom: 10%;
+  right: 4%;
+  bottom: 14%;
   height: auto;
   width: auto;
-  background: #25d366;
+  background: colores.$colorIcono;
   padding: 12.5px;
   border-radius: 50px;
 }
 #whats-chat:hover {
   cursor: pointer;
-  box-shadow: 2px 2px 15px rgb(0, 0, 0);
-  bottom: 11%;
+  box-shadow: 2px 2px 15px colores.$black;
 }
 
 #chat-box {
   position: fixed;
   right: -500px;
-  bottom: 15%;
-  width: 250px;
-  height: 200px;
-  transition: all 0.3s;
+  bottom: 18%;
+  width: 270px;
+  height: 270px;
+  transition: all 0.98s;
   font-size: 15px;
 }
 #chat-top {
   width: 100%;
-  line-height: 4;
-  background: rgb(18, 140, 126);
-  color: white;
+  line-height: 3;
+  background: colores.$colorWpp;
+  color: colores.$blanco;
   text-align: center;
   border-radius: 5px 5px 0 0;
-  padding: 0 10px;
+  padding:0 6px;
 }
 #chat-msg {
-  background: #ece5dd;
-  padding: 9px;
+  background: colores.$colorFondo2;
+  padding: 20px;
   border-radius: 0 0 5px 5px;
-  box-shadow: 0 0 25px -10px #999;
+  box-shadow: 0 0 25px -10px colores.$gris;
 }
 #chat-msg p {
-  font-size: 14px;
-  padding: 5px;
-  background: white;
+  font-size: 1.5rem;
+  padding: 10px;
+  background: colores.$colorFondo;
   border-radius: 0 50px 50px 50px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 #chat-form {
   display: flex;
 }
 .chat-in {
-  width: 80%;
+  width: 84%;
 }
 #chat-form input {
   border-radius: 5px 0 5px 5px;
@@ -70,14 +70,14 @@
 #chat-box:after {
   content: "";
   position: absolute;
-  top: 58%;
-  left: 90%;
+  top: 70%;
+  left: 90.7%;
   width: 0;
   height: 0;
-  border-top: 25px solid transparent;
-  border-bottom: 25px solid transparent;
+  border-top: 25px solid colores.$trasparente;
+  border-bottom: 25px solid colores.$trasparente;
 
-  border-right: 25px solid #ece5dd;
+  border-right: 25px solid colores.$colorFondo2;
 }
 .right {
   float: right;

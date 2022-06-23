@@ -1,4 +1,3 @@
-/* SCSS HEX */
 *,
 *:after,
 *:before {
@@ -112,54 +111,53 @@ a {
 }
 #whats-chat {
   position: fixed;
-  right: 3%;
-  bottom: 10%;
+  right: 4%;
+  bottom: 14%;
   height: auto;
   width: auto;
-  background: #25d366;
+  background: #60da8d;
   padding: 12.5px;
   border-radius: 50px;
 }
 
 #whats-chat:hover {
   cursor: pointer;
-  box-shadow: 2px 2px 15px rgb(0, 0, 0);
-  bottom: 11%;
+  box-shadow: 2px 2px 15px black;
 }
 
 #chat-box {
   position: fixed;
   right: -500px;
-  bottom: 15%;
-  width: 250px;
-  height: 200px;
-  transition: all 0.3s;
+  bottom: 18%;
+  width: 270px;
+  height: 270px;
+  transition: all 0.98s;
   font-size: 15px;
 }
 
 #chat-top {
   width: 100%;
-  line-height: 4;
-  background: rgb(18, 140, 126);
-  color: white;
+  line-height: 3;
+  background: #128c7e;
+  color: #fff;
   text-align: center;
   border-radius: 5px 5px 0 0;
-  padding: 0 10px;
+  padding: 0 6px;
 }
 
 #chat-msg {
   background: #ece5dd;
-  padding: 9px;
+  padding: 20px;
   border-radius: 0 0 5px 5px;
   box-shadow: 0 0 25px -10px #999;
 }
 
 #chat-msg p {
-  font-size: 14px;
-  padding: 5px;
-  background: white;
+  font-size: 1.5rem;
+  padding: 10px;
+  background: #c8c6c6;
   border-radius: 0 50px 50px 50px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 #chat-form {
@@ -167,7 +165,7 @@ a {
 }
 
 .chat-in {
-  width: 80%;
+  width: 84%;
 }
 
 #chat-form input {
@@ -192,12 +190,12 @@ a {
 #chat-box:after {
   content: "";
   position: absolute;
-  top: 58%;
-  left: 90%;
+  top: 70%;
+  left: 90.7%;
   width: 0;
   height: 0;
-  border-top: 25px solid transparent;
-  border-bottom: 25px solid transparent;
+  border-top: 25px solid rgba(0, 0, 0, 0);
+  border-bottom: 25px solid rgba(0, 0, 0, 0);
   border-right: 25px solid #ece5dd;
 }
 
