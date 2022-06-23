@@ -13,7 +13,7 @@
     align-items: center;
     font-size: 2.5rem;
     border-radius: 50px;
-    border: 1px solid rgb(106, 103, 103);
+    border: 1px solid colores.$gris;
     background-color: transparent;
     margin-left: 2rem;
     .button-1 {
@@ -37,12 +37,12 @@
       align-items: center;
       font-size: 1.5rem;
       border-radius: 50px;
-      border: 1px solid rgb(106, 103, 103);
+      border: 1px solid colores.$gris;
       background-color: transparent;
       margin-left: 0.5rem;
 
       .button-1 {
-        background-color: transparent;
+        background-color: colores.$trasparente;
         border: none;
         font-family: font.$fuentePrincipal;
         color: colores.$grey;
