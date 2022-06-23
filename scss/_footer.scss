@@ -5,7 +5,9 @@
 .footer{
     display: flex;
     justify-content: center;
-    padding: 1%;
+    padding: 0%;
     font-size:1.5rem;
     color: colores.$grey;
+    padding-top: 2%;
+    position: relative;
 }
