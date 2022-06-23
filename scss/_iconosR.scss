@@ -27,12 +27,12 @@
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  z-index: 10;
 }
 @media (max-width: 768px) {
   .icon-button i {
-    height: 4rem;
-    width: 4rem;
+    z-index: 10rem;
+    height: 5rem;
+    width: 5rem;
     position: absolute;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -43,20 +43,22 @@
 }
 .icon-button .icon-twitter {
   color: #5dff4074;
-  background-image: url(../img/iconos/icoonosRedes/icons8-whatsapp-48.png);
+  background-image: url(../img/iconos/icoonosRedes/icons8-twitter-48.png);
   background-position: center;
   background-repeat: no-repeat;
 }
 .icon-button .icon-facebook {
-  background-image: url(../img/iconos/icoonosRedes/icons8-facebook-48.png);
+  background-image: url(../img/iconos/icoonosRedes/icons8-facebook-nuevo-48.png);
   background-position: center;
   background-repeat: no-repeat;
 }
-.icon-button .icon-google-plus {
-  background-image: url(../img/iconos/icoonosRedes/icons8-instagram-48\ \(1\).png);
+.icon-button .icon-wpp-plus {
+  background-image: url(../img/iconos/icoonosRedes/icons8-whatsapp-48.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .icon-button .icon-instagram-plus {
-  background-image: url(../img/iconos/icoonosRedes/icons8-twitter-48.png);
+  background-image: url(../img/iconos/icoonosRedes/instagram.png);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -67,7 +69,7 @@
   width: 100%;
   margin: 0 auto;
   max-width: 70rem;
-  margin-top:0;
+  margin-top: 0;
   padding: 0%;
   left: 20%;
 }
@@ -80,15 +82,12 @@
   flex-wrap: wrap;
   -webkit-box-pack: center;
   left: 70%;
-  
-
 }
 .col {
   width: calc(20% - 6rem);
   margin: 6rem;
   cursor: pointer;
   margin-top: 0%;
-  
 }
 
 .containerr {
@@ -96,7 +95,6 @@
   transform-style: preserve-3d;
   -webkit-perspective: 1000px;
   perspective: 1000px;
- 
 }
 
 .front,
@@ -112,7 +110,6 @@
   color: rgba(255, 255, 255, 0.194);
   font-size: 1.5rem;
   left: 5rem;
-  
 }
 
 .back {
@@ -120,7 +117,6 @@
   background: -webkit-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
   background: -o-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
   background: linear-gradient(45deg, #cedce7 0%, #596a72 100%);
-  
 }
 
 .front:after {
@@ -242,7 +238,7 @@
     margin: 0 0 2rem 0;
   }
 }
-p{
+p {
   color: #000;
   font-size: 2rem;
 }
