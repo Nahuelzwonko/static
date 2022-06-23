@@ -9,7 +9,7 @@
   padding-top: 5%;
 }
 @media (max-width: 768px) {
-  .icon-button{
+  .icon-button {
     display: inline-block;
     margin: 0 0 0 9px;
     position: static;
@@ -21,7 +21,7 @@
 /* Icons */
 .icon-button i {
   height: 4rem;
- width: 4rem;
+  width: 4rem;
   position: absolute;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -30,15 +30,15 @@
   z-index: 10;
 }
 @media (max-width: 768px) {
-  .icon-button  i{
+  .icon-button i {
     height: 4rem;
     width: 4rem;
-     position: absolute;
-     -webkit-transition: all 0.3s;
-     -moz-transition: all 0.3s;
-     -o-transition: all 0.3s;
-     transition: all 0.3s;
-     z-index: 10;
+    position: absolute;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index: 10;
   }
 }
 .icon-button .icon-twitter {
@@ -48,19 +48,16 @@
   background-repeat: no-repeat;
 }
 .icon-button .icon-facebook {
-  
-  background-image: url(../img/iconos/icoonosRedes/icons8-facebook-48.png) ;
+  background-image: url(../img/iconos/icoonosRedes/icons8-facebook-48.png);
   background-position: center;
   background-repeat: no-repeat;
 }
 .icon-button .icon-google-plus {
- 
-  background-image: url(../img/iconos/icoonosRedes/icons8-instagram-48\ \(1\).png);
+  background-image: url(../img/iconos/icoonosRedes/icons8-instagram-48\\(1\).png);
   background-position: center;
   background-repeat: no-repeat;
 }
 .icon-button .icon-instagram-plus {
- 
   background-image: url(../img/iconos/icoonosRedes/icons8-twitter-48.png);
   background-position: center;
   background-repeat: no-repeat;
