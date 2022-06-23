@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 /* SCSS HEX */
 *,
 *:after,
@@ -57,6 +56,15 @@ a {
   top: 0;
 }
 
+@media (max-width: 768px) {
+  .imagen {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 4.1rem;
+    width: 300px;
+  }
+}
 .botones {
   display: flex;
   justify-content: center;
@@ -79,6 +87,29 @@ a {
   color: rgba(93, 87, 87, 0.9058823529);
 }
 
+@media (max-width: 768px) {
+  .botones {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    padding-top: 45rem;
+  }
+  .botones .btn {
+    width: 150px;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    border: 1px solid rgb(106, 103, 103);
+    background-color: transparent;
+    margin-left: 0.5rem;
+  }
+  .botones .btn .button-1 {
+    background-color: transparent;
+    border: none;
+    font-family: "Cookie", cursive;
+    color: rgba(93, 87, 87, 0.9058823529);
+  }
+}
 #whats-chat {
   position: fixed;
   right: 3%;
@@ -327,6 +358,13 @@ ul li a:hover:nth-child(4) {
   padding-top: 5%;
 }
 
+@media (max-width: 768px) {
+  .fondo {
+    position: absolute;
+    left: 0;
+    top: 35%;
+  }
+}
 .gradient-text {
   font-size: 9rem;
   color: transparent;
@@ -341,6 +379,11 @@ ul li a:hover:nth-child(4) {
   animation: expand 0.5s ease forwards;
 }
 
+@media (max-width: 768px) {
+  .gradient-text {
+    font-size: 6rem;
+  }
+}
 @keyframes expand {
   0% {
     background-size: 50%;
