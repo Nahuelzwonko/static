@@ -1,7 +1,7 @@
 /*iconos de redes sociales */
-.ayuda{
+.ayuda {
   display: flex;
- justify-content: center;
+  justify-content: center;
   flex-direction: row;
   align-items: center;
   width: 269px;
@@ -18,7 +18,7 @@
 @media (max-width: 768px) {
   .icon-button {
     display: inline-block;
-    margin:13px 1px 23px 6-5px;
+    margin: 13px 1px 23px 6-5px;
     position: static;
     width: 3rem;
     padding-left: 15%;
@@ -69,188 +69,103 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-.icon-button .icon-maps{
+.icon-button .icon-maps {
   background-image: url(../img/iconos/icoonosRedes/icons8-google-maps-48.png);
   background-position: center;
   background-repeat: no-repeat;
 }
 /*iconos de seccion inicio de curso*/
 
-.wrapper {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-  max-width: 70rem;
-  margin-top: 0;
-  padding: 0%;
-  left: 20%;
-}
 
-.cols {
-  flex-direction: column;
+
+.social {
   display: flex;
+  flex-direction: column-reverse;
   justify-content: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  left: 70%;
-}
-.col {
-  width: calc(20% - 6rem);
-  margin: 6rem;
-  cursor: pointer;
-  margin-top: 0%;
-}
-
-.containerr {
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
-}
-
-.front,
-.back {
-  background-size: cover;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
-  background-position: center;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  text-align: center;
-  min-height: 280px;
-  border-radius: 50%;
-  color: rgba(255, 255, 255, 0.194);
-  font-size: 1.5rem;
-  left: 5rem;
-}
-
-.back {
-  background: #cedce7;
-  background: -webkit-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
-  background: -o-linear-gradient(45deg, #cedce7 0%, #596a72 100%);
-  background: linear-gradient(45deg, #cedce7 0%, #596a72 100%);
-}
-
-.front:after {
-  position: absolute;
-  top: 0%;
-  left: 0;
+  align-items: center;
   width: 100%;
-  height: 100%;
-  content: "";
-  display: block;
-  opacity: 0.6;
-  background-color: #000;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  border-radius: 50%;
-}
-.containerr:hover .front,
-.containerr:hover .back {
-  -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  -o-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1),
-    -webkit-transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  margin: 25% 0px 0px 0px;
+  justify-content: center;
+  transform: translateY(-50%);
 }
 
-.back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-.inner {
-  -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
-  transform: translateY(-50%) translateZ(60px) scale(0.94);
-  top: 50%;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  padding: 2rem;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  outline: 1px solid transparent;
-  -webkit-perspective: inherit;
-  perspective: inherit;
-  z-index: 2;
-}
-
-.containerr .back {
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-
-.containerr .front {
-  -webkit-transform: rotateY(0deg);
-  transform: rotateY(0deg);
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-
-.containerr:hover .back {
-  -webkit-transform: rotateY(0deg);
-  transform: rotateY(0deg);
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-
-.containerr:hover .front {
-  -webkit-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-
-.front .inner p {
-  font-size: 2rem;
-  margin-bottom: 2rem;
+.social .link {
+  display: inline-block;
+  vertical-align: middle;
   position: relative;
-  left: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px dashed white;
+  background-clip: content-box;
+  padding: 8px;
+  transition: 0.5s;
+  color: #D7D0BE;
+ margin-top: 43px;
+  margin-left: 23px;
+  margin-right: 15px;
+  font-size: 70px;
 }
 
-.front .inner p:after {
-  content: "";
-  width: 4rem;
-  height: 2px;
-  position: absolute;
-  background: #c6d4df;
+.social .link span {
   display: block;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  bottom: -0.75rem;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.front .inner span {
-  color: rgba(255, 255, 255, 0.7);
-  font-family: "Montserrat";
-  font-weight: 300;
+.social .link:hover {
+  padding: 20px;
+  color: white;
+  margin-left: -5px;
+  transform: translateX(10px) rotate(360deg);
 }
 
-@media screen and (max-width: 64rem) {
-  .col {
-    width: calc(33.333333% - 2rem);
+.social .link.est1 {
+  background-image: url(../img/iconos/iconosCurso/botox.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  
+}
+
+.social .link.est2{
+  background-image: url(../img/iconos/iconosCurso/botox.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+ 
+}
+//icono de est3
+.social .link.est3 {
+  background-image: url(../img/iconos/iconosCurso/botox.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  
+}
+.logo{
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  background-image: url(../img/logo/logo.png);
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  width: 20%;
+  height: 40%;
+  left: 75px;
+  top: 0%;
+  .vuelta{
+    display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  width: 20%;
+  height: 40%;
+  left: 75px;
+  top: 0%;
   }
 }
 
-@media screen and (max-width: 48rem) {
-  .col {
-    width: calc(50% - 2rem);
-  }
-}
-
-@media screen and (max-width: 32rem) {
-  .col {
-    width: 100%;
-    margin: 0 0 2rem 0;
-  }
-}
-p {
-  color: #000;
-  font-size: 2rem;
-}
