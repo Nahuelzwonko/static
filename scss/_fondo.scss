@@ -1,78 +1,49 @@
 @use "font";
 @use "colores";
 @use "globales";
-
-.fondo {
+.nombre{
+  display: flex;
+  justify-content: center;
   position: absolute;
-  left: 24%;
-  top: 48%;
-  padding: 0%;
-  padding-top: 5%;
+  top: 53%;
+  left: 30%;
+  margin: -27px 0px 0 -49px;
 }
-//responsive de texto de fondo
-@media (max-width: 768px) {
-  .fondo {
-    position: absolute;
-    left: 0;
-    top: 35%;
-  }
+.header-scroll-text{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+  width: 600px;
+  height: 55px;
+  overflow:hidden;
 }
-.gradient-text {
-  font-size: 9rem;
-
-  color: transparent;
-  background: conic-gradient(
-    #5d5757e7 12%,
-    #f4eaf0ff 12%,
-    #f4eaf0ff 33%,
-    #f5e1ceff 33%,
-    #f5e1ceff 55%,
-    #ffc8adff 55%,
-    #ffc8adff 70%,
-    #5d5757e7 70%,
-    #5d5757e7 87%,
-    #f7d1ba 87%
-  );
-  background-size: 50%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  animation: expand-rev 0.5s ease forwards;
+ul{
+  list-style:none;
+  text-align:left;
+  padding-left: 20px;
+  margin:0;
 }
-.gradient-text:hover {
-  animation: expand 0.5s ease forwards;
-}
-//responsive de texto de fondo
-@media (max-width: 768px) {
-  .gradient-text {
-    font-size: 6rem;
-  }
-}
-@keyframes expand {
-  0% {
-    background-size: 50%;
-    background-position: 0 0;
-  }
-  20% {
-    background-size: 55%;
-    background-position: 0 1em;
-  }
-  100% {
-    background-size: 325%;
-    background-position: -10em -4em;
-  }
+ul li {
+  line-height:40px;
+  margin:0;
 }
 
-@keyframes expand-rev {
-  0% {
-    background-size: 325%;
-    background-position: -10em -4em;
-  }
-  20% {
-    background-size: 55%;
-    background-position: 0 1em;
-  }
-  100% {
-    background-size: 50%;
-    background-position: 0 0;
-  }
+ul{
+  margin:0;
+  animation-name: header-scroll;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+
+/*   animation-direction*/
+  animation-direction: normal;
+  
+}
+@keyframes header-scroll {
+  0% {transform:translateY(66%);}
+  15% {transform:translateY(33%);}
+  50% {transform:translateY(0%);}
+  85% {transform:translateY(-33%);}
+  100% {transform:translateY(-66%);}
+
 }

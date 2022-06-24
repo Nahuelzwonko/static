@@ -1,17 +1,24 @@
 /*iconos de redes sociales */
+.ayuda{
+  display: flex;
+ justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  width: 269px;
+  height: 0px;
+  top: 78%;
+  left: 40%;
+  position: fixed;
+}
+
 .icon-button {
-  display: inline-flex;
-  flex-direction: column-reverse;
-  margin: 0 0 5px 4px;
-  position: relative;
+  margin: 9%;
   width: 3.6rem;
-  left: 41%;
-  padding-top: 5%;
 }
 @media (max-width: 768px) {
   .icon-button {
     display: inline-block;
-    margin:13px 1px 23px -5px;
+    margin:13px 1px 23px 6-5px;
     position: static;
     width: 3rem;
     padding-left: 15%;

@@ -67,8 +67,9 @@ a {
 .botones {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
-  padding-top: 53rem;
+  position: absolute;
+  top: 65%;
+  left: 31%;
 }
 .botones .btn {
   width: 200px;
@@ -207,83 +208,85 @@ a {
   clear: both;
 }
 
-.fondo {
+.nombre {
+  display: flex;
+  justify-content: center;
   position: absolute;
-  left: 24%;
-  top: 48%;
-  padding: 0%;
-  padding-top: 5%;
+  top: 53%;
+  left: 30%;
+  margin: -27px 0px 0 -49px;
 }
 
-@media (max-width: 768px) {
-  .fondo {
-    position: absolute;
-    left: 0;
-    top: 35%;
-  }
-}
-.gradient-text {
-  font-size: 9rem;
-  color: transparent;
-  background: conic-gradient(rgba(93, 87, 87, 0.9058823529) 12%, #f4eaf0 12%, #f4eaf0 33%, #f5e1ce 33%, #f5e1ce 55%, #ffc8ad 55%, #ffc8ad 70%, rgba(93, 87, 87, 0.9058823529) 70%, rgba(93, 87, 87, 0.9058823529) 87%, #f7d1ba 87%);
-  background-size: 50%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  animation: expand-rev 0.5s ease forwards;
+.header-scroll-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 55px;
+  overflow: hidden;
 }
 
-.gradient-text:hover {
-  animation: expand 0.5s ease forwards;
+ul {
+  list-style: none;
+  text-align: left;
+  padding-left: 20px;
+  margin: 0;
 }
 
-@media (max-width: 768px) {
-  .gradient-text {
-    font-size: 6rem;
-  }
+ul li {
+  line-height: 40px;
+  margin: 0;
 }
-@keyframes expand {
+
+ul {
+  margin: 0;
+  animation-name: header-scroll;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  /*   animation-direction*/
+  animation-direction: normal;
+}
+
+@keyframes header-scroll {
   0% {
-    background-size: 50%;
-    background-position: 0 0;
+    transform: translateY(66%);
   }
-  20% {
-    background-size: 55%;
-    background-position: 0 1em;
+  15% {
+    transform: translateY(33%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  85% {
+    transform: translateY(-33%);
   }
   100% {
-    background-size: 325%;
-    background-position: -10em -4em;
-  }
-}
-@keyframes expand-rev {
-  0% {
-    background-size: 325%;
-    background-position: -10em -4em;
-  }
-  20% {
-    background-size: 55%;
-    background-position: 0 1em;
-  }
-  100% {
-    background-size: 50%;
-    background-position: 0 0;
+    transform: translateY(-66%);
   }
 }
 /*iconos de redes sociales */
+.ayuda {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  width: 269px;
+  height: 0px;
+  top: 78%;
+  left: 40%;
+  position: fixed;
+}
+
 .icon-button {
-  display: inline-flex;
-  flex-direction: column-reverse;
-  margin: 0 0 5px 4px;
-  position: relative;
+  margin: 9%;
   width: 3.6rem;
-  left: 41%;
-  padding-top: 5%;
 }
 
 @media (max-width: 768px) {
   .icon-button {
     display: inline-block;
-    margin: 13px 1px 23px -5px;
+    margin: 13px 1px 23px 1px;
     position: static;
     width: 3rem;
     padding-left: 15%;
@@ -522,6 +525,14 @@ a {
 p {
   color: #000;
   font-size: 2rem;
+}
+
+.fot {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 90%;
+  left: 40%;
 }
 
 .footer {

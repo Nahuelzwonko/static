@@ -4,9 +4,10 @@
 
 .botones {
   display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  padding-top: 53rem;
+  justify-content: center ;
+  position: absolute;
+  top: 65%;
+  left: 31%;
 
   .btn {
     width: 200px;

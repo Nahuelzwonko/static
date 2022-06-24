@@ -1,7 +1,13 @@
 @use "globales";
 @use "colores";
 @use "font";
-
+.fot{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 90%;
+  left: 40%;
+}
 .footer {
   display: flex;
   justify-content: center;
