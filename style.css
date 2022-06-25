@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #ece5dd;
+  background-color: white;
 }
 
 h1 {
@@ -60,7 +60,7 @@ a {
     display: flex;
     justify-content: center;
     position: absolute;
-    left: 4.1rem;
+    left: 7rem;
     width: 300px;
   }
 }
@@ -69,7 +69,7 @@ a {
   justify-content: center;
   position: absolute;
   top: 65%;
-  left: 31%;
+  left: 34%;
 }
 .botones .btn {
   width: 200px;
@@ -216,53 +216,84 @@ a {
   left: 30%;
   margin: -27px 0px 0 -49px;
 }
-
-.header-scroll-text {
+.nombre .header-scroll-text {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 600px;
-  height: 55px;
+  height: 53px;
   overflow: hidden;
 }
-
-ul {
+.nombre .header-scroll-text ul {
   list-style: none;
   text-align: left;
   padding-left: 20px;
   margin: 0;
 }
-
-ul li {
+.nombre .header-scroll-text ul li {
   line-height: 40px;
   margin: 0;
 }
 
+@media (max-width: 768px) {
+  .nombre {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 0%;
+    left: 25%;
+    top: 40%;
+    width: 300px;
+  }
+  .nombre .rool {
+    font-size: 27px;
+  }
+  .nombre .rool .header-scroll-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 40px;
+    overflow: hidden;
+  }
+  .nombre .rool .header-scroll-text ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 2px;
+    margin: 0;
+  }
+  .nombre .rool .header-scroll-text ul li {
+    width: 100px;
+    line-height: 70px;
+    margin: 12px;
+  }
+}
+/*   animation-direction*/
 ul {
   margin: 0;
   animation-name: header-scroll;
   animation-duration: 4s;
   animation-iteration-count: infinite;
-  /*   animation-direction*/
   animation-direction: normal;
 }
 
 @keyframes header-scroll {
   0% {
-    transform: translateY(66%);
+    transform: translateY(74%);
   }
   15% {
-    transform: translateY(33%);
+    transform: translateY(26%);
   }
   50% {
     transform: translateY(0%);
   }
   85% {
-    transform: translateY(-33%);
+    transform: translateY(-26%);
   }
   100% {
-    transform: translateY(-66%);
+    transform: translateY(-74%);
   }
 }
 /*iconos de redes sociales */

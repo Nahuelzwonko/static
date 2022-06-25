@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: colores.$colorFondo2;
+  background-color: white;
 }
 h1 {
   color: rgba(0, 0, 0, 0.845);
@@ -56,7 +56,7 @@ a {
     display: flex;
     justify-content: center;
     position: absolute;
-    left: 4.1rem;
+    left: 7rem;
     width: 300px;
   }
 }

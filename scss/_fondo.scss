@@ -1,51 +1,96 @@
 @use "font";
 @use "colores";
 @use "globales";
-.nombre{
+.nombre {
   display: flex;
   justify-content: center;
   position: absolute;
   top: 53%;
   left: 30%;
   margin: -27px 0px 0 -49px;
- 
-}
-.header-scroll-text{
-  display:flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items:center;
-  width: 600px;
-  height: 55px;
-  overflow:hidden;
+  .header-scroll-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 53px;
+    overflow: hidden;
+    ul {
+      list-style: none;
+      text-align: left;
+      padding-left: 20px;
+      margin: 0;
+      li {
+        line-height: 40px;
+        margin: 0;
 
-}
-ul{
-  list-style:none;
-  text-align:left;
-  padding-left: 20px;
-  margin:0;
-}
-ul li {
-  line-height:40px;
-  margin:0;
+      }
+    }
+    
+  }
 }
 
-ul{
-  margin:0;
+
+@media (max-width: 768px) {
+  .nombre {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 0%;
+    left: 25%;
+    top: 40%;
+    width: 300px;
+    .rool {
+      font-size: 27px;
+      .header-scroll-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        height: 40px;
+        overflow: hidden;
+        ul {
+          list-style: none;
+          text-align: left;
+          padding-left: 2px;
+          margin: 0;
+          li {
+            width: 100px;
+            line-height: 70px;
+            margin: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*   animation-direction*/
+ul {
+  margin: 0;
   animation-name: header-scroll;
   animation-duration: 4s;
   animation-iteration-count: infinite;
-
-/*   animation-direction*/
   animation-direction: normal;
-  
+}
+@media (max-width: 768px) {
 }
 @keyframes header-scroll {
-  0% {transform:translateY(66%);}
-  15% {transform:translateY(33%);}
-  50% {transform:translateY(0%);}
-  85% {transform:translateY(-33%);}
-  100% {transform:translateY(-66%);}
-
+  0% {
+    transform: translateY(74%);
+  }
+  15% {
+    transform: translateY(26%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  85% {
+    transform: translateY(-26%);
+  }
+  100% {
+    transform: translateY(-74%);
+  }
 }
